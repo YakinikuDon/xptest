@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>16种深层性癖倾向测试</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- html2canvas for saving results -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        
+        <!-- Entry Page -->
+        <div id="entry-page" class="section">
+            <div class="glass-panel">
+                <span class="warning-icon">🔞</span>
+                <h1>深层XP倾向测试</h1>
+                <p>本测试包含轻度成人话题（BDSM、情感倾向等元素），旨在探索您的潜意识属性。</p>
+                <div style="margin-top: 32px;">
+                    <p style="font-size: 0.9rem; color: var(--accent-2);">点击下方按钮即代表您确认：</p>
+                    <p style="font-size: 0.85rem; font-weight: bold;">我已满18周岁，并接受测试内容。</p>
+                </div>
+                <button id="btn-start" class="btn btn-primary" style="margin-top: 16px;">确认并开始探索</button>
+            </div>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz-page" class="section hidden">
+            <div class="glass-panel">
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+                <div id="question-counter" style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px;">1 / 10</div>
+                <h2 id="question-text" class="question-text">问题加载中...</h2>
+                <div id="options-container" class="options-container">
+                    <!-- Options injected by JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Page -->
+        <div id="loading-page" class="section hidden">
+            <div class="glass-panel" style="width: 100%;">
+                <div class="spinner"></div>
+                <h2 style="margin-bottom: 8px;">数据解析中</h2>
+                <div id="loading-text" class="loading-text">正在量化多巴胺分布...</div>
+            </div>
+        </div>
+
+        <!-- Result Page -->
+        <div id="result-page" class="section hidden">
+            
+            <div id="result-content">
+                <div class="result-header">
+                    <div class="result-type-title">您的潜层XP型态</div>
+                    <div id="res-avatar" class="result-avatar"></div>
+                    <div id="res-letters" class="result-letters">BDOM</div>
+                    <div id="res-char" class="result-char">「统领」</div>
+                </div>
+
+                <div class="radar-container">
+                    <!-- Fake capability bars based on dimensions -->
+                    <div class="stat-bar">
+                        <div class="stat-label"><span>倾向域 (Dom/Sub)</span> <span id="stat-val-d">0%</span></div>
+                        <div class="bar-bg"><div id="stat-bar-d" class="bar-fill fill-d" style="width: 0%"></div></div>
+                    </div>
+                    <div class="stat-bar">
+                        <div class="stat-label"><span>受体域 (Mental/Physical)</span> <span id="stat-val-s">0%</span></div>
+                        <div class="bar-bg"><div id="stat-bar-s" class="bar-fill fill-s" style="width: 0%"></div></div>
+                    </div>
+                    <div class="stat-bar">
+                        <div class="stat-label"><span>烈度域 (Vanilla/Hardcore)</span> <span id="stat-val-b">0%</span></div>
+                        <div class="bar-bg"><div id="stat-bar-b" class="bar-fill fill-b" style="width: 0%"></div></div>
+                    </div>
+                    <div class="stat-bar">
+                        <div class="stat-label"><span>规则域 (Order/Chaos)</span> <span id="stat-val-c">0%</span></div>
+                        <div class="bar-bg"><div id="stat-bar-c" class="bar-fill fill-c" style="width: 0%"></div></div>
+                    </div>
+                </div>
+
+                <!-- New Play Section -->
+                <div class="result-play-box">
+                    <h3 class="play-title">🔥 专属情趣 Play 推荐</h3>
+                    <p id="res-play" class="play-desc">加载玩法中...</p>
+                </div>
+
+                <div id="res-desc" class="result-desc">
+                    加载解说中...
+                </div>
+
+                <div class="compatible-box">
+                    <h3>相性绝佳の猎物/主宰</h3>
+                    <div id="res-compatible" class="compatible-type">SBDM「犬」</div>
+                </div>
+
+                <div class="watermark">扫码或搜索参与测试 | 16种深层性癖倾向测试</div>
+            </div>
+
+            <div style="margin-top: 24px;">
+                <button id="btn-share" class="btn btn-primary">📸 生成专属分享图</button>
+                <button id="btn-restart" class="btn">🔄 再测一次</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Container to show generated image -->
+    <div id="share-modal" class="hidden" style="position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.9); z-index: 999; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px;">
+        <p style="color: white; margin-bottom: 16px;">长按图片保存分享</p>
+        <div style="max-height: 70vh; overflow-y: auto; border-radius: 16px; margin-bottom: 24px;" id="share-img-container"></div>
+        <button id="btn-close-modal" class="btn" style="width: 200px;">关闭</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
