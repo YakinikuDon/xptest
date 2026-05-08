@@ -13,7 +13,7 @@ const questions = [
     {
         q: "被拉去玩剧本杀，你抽到了一个全程被骂、还要给人下跪的“大冤种”角色，你：",
         options: [
-            { text: "直接掀桌，什么破本，老子花钱是来当大爷的，立马强行篡改剧情。", dom: 1, mental: -1, hardcore: 1, order: -1 },
+            { text: "直接掀桌，什么破本，老子花钱是来当大爷的，立马强行要求换人。", dom: 1, mental: -1, hardcore: 1, order: -1 },
             { text: "表面不爽，但其实心里有一丝丝诡异的爽感。", dom: -1, mental: -1, hardcore: 1, order: 1 },
             { text: "发挥毕生演技，把这冤种演得催人泪下，享受所有人同情的目光。", dom: -1, mental: 1, hardcore: -1, order: 1 },
             { text: "满嘴跑火车，把剧本里的仇人都气死，强行把悲剧演成喜剧。", dom: 1, mental: 1, hardcore: -1, order: -1 }
@@ -33,7 +33,7 @@ const questions = [
         options: [
             { text: "毫不留情地开启祖安模式，从操作到智商给ta进行全方位降维打击。", dom: 1, mental: 1, hardcore: 1, order: 1 },
             { text: "顺着网线过去真人PK，能动手绝不BB。", dom: 1, mental: -1, hardcore: 1, order: -1 },
-            { text: "卑微祈求：“大佬别送了，我给你当狗还不行吗，求求了。”", dom: -1, mental: 1, hardcore: 1, order: 1 },
+            { text: "卑微祈求：“大佬别送了，我给你跪了还不行吗，求求了。”", dom: -1, mental: 1, hardcore: 1, order: 1 },
             { text: "直接开摆，跟着ta一起送，还要在语音里比谁笑得更大声。", dom: -1, mental: -1, hardcore: -1, order: -1 }
         ]
     },
@@ -50,9 +50,9 @@ const questions = [
         q: "半夜三更，朋友突然发神经说要出去裸奔，你：",
         options: [
             { text: "立刻制定详细的裸奔路线图，并在前面开路指挥。", dom: 1, mental: 1, hardcore: -1, order: 1 },
-            { text: "比ta脱得还快，并且提议两人互殴一场助助兴。", dom: 1, mental: -1, hardcore: 1, order: -1 },
+            { text: "比ta脱得还快，并且提议先两人互殴一场热热身。", dom: 1, mental: -1, hardcore: 1, order: -1 },
             { text: "疯狂劝阻，但在ta真的跑出去后，一边害怕一边激动地帮忙拿衣服。", dom: -1, mental: 1, hardcore: -1, order: 1 },
-            { text: "虽然觉得有病，但觉得如果能被ta在大街上遛一圈好像也挺刺激的。", dom: -1, mental: -1, hardcore: 1, order: -1 }
+            { text: "虽然觉得有病，但觉得如果能随ta在大街上遛一圈好像也挺刺激的。", dom: -1, mental: -1, hardcore: 1, order: -1 }
         ]
     },
     {
