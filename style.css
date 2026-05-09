@@ -289,7 +289,15 @@ p {
 }
 
 .stat-bar {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-desc {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .stat-label {
