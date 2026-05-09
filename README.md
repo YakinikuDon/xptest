@@ -1,10 +1,10 @@
 # XPTI 性格测试 (原名: 16种深层XP倾向测试)
 
-![XPTI Banner](https://yakinikudon.github.io/xptest/avatars.png)
+![XPTI Banner](https://xpti.yakinikudon.top/avatars.png)
 
 > **警告：本测试包含轻度成人话题、BDSM及情感倾向元素。未满18周岁请自觉绕道！**
 
-🔗 **在线游玩地址**：[https://yakinikudon.github.io/xptest/](https://yakinikudon.github.io/xptest/)
+🔗 **在线游玩地址**：[https://xpti.yakinikudon.top/](https://xpti.yakinikudon.top/)
 
 ## 📖 项目简介
 本项目是一个基于“发疯文学”和网络亚文化语境打造的 **16型潜意识情趣倾向测试 (XPTI)**。采用了经典的极简矢量视觉风格，配以极具攻击性和戏谑感的 SBTI 风格文案。
